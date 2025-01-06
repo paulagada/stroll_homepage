@@ -86,7 +86,8 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Image.asset(
                         "assets/icons/alarm.png",
-                        scale: 4,
+                        // scale: 3.9,
+                        height: 16, width: 16,
                       ),
                       const SizedBox(
                         width: 3,
@@ -98,9 +99,14 @@ class _HomePageState extends State<HomePage> {
                       const SizedBox(
                         width: 12,
                       ),
-                      Image.asset("assets/icons/person.png"),
+                      Image.asset(
+                        "assets/icons/tab4.png",
+                        color: Colors.white,
+                        height: 20,
+                        width: 20,
+                      ),
                       Text(
-                        " 103",
+                        "103",
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ],
@@ -159,7 +165,7 @@ class _HomePageState extends State<HomePage> {
                                       child: Text(
                                         "What is your favorite time of the day?",
                                         style: TextStyle(
-                                            color: Colors.white,
+                                            color: Color(0xFFF5F5F5),
                                             fontSize: 25,
                                             fontWeight: FontWeight.w700),
                                       ),
